@@ -1,0 +1,111 @@
+.scrollmenu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px; /* Adjust button width as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.left-btn {
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  border: none;
+  outline: none;
+  color: black;
+  text-align: center;
+  padding: 0%;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.right-btn {
+  right: 0;
+  outline: none;
+  
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  ); 
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px ;
+  cursor: pointer;
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  flex: 1;
+  padding: 0 40px;
+  position: relative;
+  display: flex;
+}
+
+.scrollmenu .item {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  border: 1px solid rgba(179, 179, 177, 1);
+  text-decoration: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.scrollmenu .item:hover {
+  border: none;
+  background-color:#ffc865;
+}
+
+.scrollmenu::before, .scrollmenu::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px; 
+  pointer-events: none;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent); */
+
+}
+
+
+.item {
+  flex-shrink: 0; 
+  white-space: normal;
+  padding: 10px; 
+}
+
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

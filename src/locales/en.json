@@ -1,0 +1,13 @@
+{
+  "greeting": "Hello, World!",
+  "howAerU": "Hello! How are you today?",
+  "weather": "What's the weather like where you are?",
+  "weekendPlans": "Do you have any plans for this weekend?",
+  "dontUnderstand": "I'm sorry, I don't understand.",
+  "favoriteDish": "What is your favorite dish?",
+  "favoriteMovie": "What is your all-time favorite movie?",
+  "petName": "What's your pet's name?",
+  "dreamDestination": "What is your dream travel destination?",
+  "enjoyCooking": "Do you enjoy cooking?",
+  "lastBook": "What is the last book you read?"
+}

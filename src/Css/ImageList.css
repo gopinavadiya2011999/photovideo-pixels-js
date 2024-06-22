@@ -1,0 +1,214 @@
+.image-grid {
+  column-count: 3;
+  column-gap: 1vw;
+}
+
+.image-item {
+  break-inside: avoid;
+  margin-bottom: 0;
+}
+
+.image-item img {
+  width: 100%;
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.download-button {
+
+  border-radius: 30px;
+  background: hsla(168, 93%, 30%,0.8);
+  border: none;
+  font-size: 14px;
+  padding: 0.5vw 0.6vw;
+  color: white;
+}
+.download-button:hover{
+  background: hsl(168, 93%, 30%);
+  
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.profile-details {
+  color: white;
+  width: auto;
+  background-color: red;
+}
+
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 600;
+  color: white;
+  text-overflow: ellipsis;
+  max-lines: 2;
+}
+
+@media screen and (max-width: 800px) {
+  .image-grid {
+    column-count: 2;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  height: 100%-15px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+}
+
+.image-wrapper:hover::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.cattitle {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.photosbutton {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 60px;
+  background-color: black;
+  color: white;
+}
+.filter-popular {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 0.3px solid rgba(156, 152, 152, 0.5);
+  background: transparent;
+}
+.filtercl {
+  background: transparent;
+  margin:0px;
+  border-right: 0.3px solid rgba(156, 152, 152, 0.5);
+  padding: 0px 20px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  outline: none;
+  box-sizing: border-box;
+  display: inline-flex;
+}
+
+.filtercl:hover{
+  border-right: 0.3px solid black;
+  }
+  
+.filtercl-parent {
+  margin:0px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 0.3px solid rgba(156, 152, 152, 0.5);
+  display: inline-flex
+}
+
+.filtercl-parent:hover{
+  border-radius: 6px;
+  border: 0.3px solid black;
+
+}
+
+
+.filter-popular:hover {
+  border-radius: 6px;
+  border: 0.3px solid black;
+}
+
+.photosbutton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.subDetail {
+  color: rgba(128, 128, 128, 0.8);
+  font-size: 14px;
+  margin-left: 5px;
+}
+.subDetail:hover {
+  color: grey;
+}
+
+
+.black-hover{
+  color: rgba(0, 0, 0, 0.8)
+}
+
+.black-hover:hover{
+  color: rgba(0, 0, 0)
+}
+.fav-bookmark:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.fav-bookmark{
+  background-color: white;
+}
+
+.toggle {
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-up {
+  transform: rotate(180deg);
+}
+
+.toggle-down {
+  transform: rotate(0);
+}
+.toggle-ups {
+  transform: rotate(230deg);
+}
+
+.toggle-downs {
+  transform: rotate(40deg);
+}
+
+
+.dropdown-spacebetween{
+  display: flex;
+  padding:0px;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.dropdown-spacebetweenmain{
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.colorField::placeholder {
+  color: black;
+  opacity: 1; 
+}
